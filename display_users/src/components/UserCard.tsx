@@ -11,7 +11,7 @@ const UserCard: React.FC<IProps> = ({ user }) => {
   const { name, username } = user;
   const [showDetails, setShowDetails] = useState<boolean>(false);
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     setShowDetails(!showDetails);
   };
 

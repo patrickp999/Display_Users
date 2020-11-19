@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const UserDetails: React.FC<IProps> = ({ user }) => {
-  const { id, email, address, phone, website, company } = user;
+  const { email, address, phone, website, company } = user;
   const { street, city, zipcode, geo, suite } = address;
   const { lat, lng } = geo;
   const { name: companyName, catchPhrase, bs } = company;

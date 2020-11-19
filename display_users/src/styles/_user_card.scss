@@ -1,0 +1,23 @@
+.user-card {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid gray;
+  padding-top: 12px;
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.user-card--name {
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  background-color: inherit;
+  color: #34657f;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.user-card--user-name {
+  margin: 0.5rem;
+}

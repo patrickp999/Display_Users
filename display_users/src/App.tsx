@@ -7,9 +7,13 @@ const App: React.FC = () => {
   const [users, setUsers] = useState<IUser[]>([]);
 
   useEffect(() => {
-    Axios.get<IUser[]>(
-      'https://jsonplaceholder.typicode.com/users'
-    ).then((response: AxiosResponse) => setUsers(response.data));
+    try {
+      Axios.get<IUser[]>(
+        'https://jsonplaceholder.typicode.com/users'
+      ).then((response) => setUsers(response.data));
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
 
   return (
