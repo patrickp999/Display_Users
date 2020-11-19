@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Axios, { AxiosResponse } from 'axios';
+import Axios from 'axios';
 import { IUser } from './models';
 import ResultsContainer from './components/ResultsContainer';
 
